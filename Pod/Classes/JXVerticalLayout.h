@@ -25,3 +25,9 @@ typedef NS_ENUM(NSInteger,JXVerticalLayoutAlignment) {
 -(void)appendBlankLineWithHeight:(CGFloat)height color:(UIColor*)color;
 
 @end
+
+@interface JXVerticalLayout (Measurement)
+
++(CGSize)boundingSizeForText:(NSString*)text font:(UIFont*)font widthLimit:(CGFloat)widthLimit;
+
+@end

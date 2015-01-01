@@ -64,28 +64,28 @@
     label.numberOfLines=0;
     CGRect frame=self.view.frame;
     CGSize size=frame.size;
-    NSDictionary* attributes=@{NSFontAttributeName:label.font};
-    CGRect boundingRect=[label.text boundingRectWithSize:CGSizeMake(MIN(widthLimit,self.view.bounds.size.width), MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil];
-    boundingRect.size=CGSizeMake(MIN(widthLimit,self.view.bounds.size.width), boundingRect.size.height);
+    CGSize boundingSize=[JXVerticalLayout boundingSizeForText:label.text font:label.font widthLimit:widthLimit];
+    CGRect tmpLabelFrame;
+    tmpLabelFrame.size=boundingSize;
     switch (alignment) {
         case JXVerticalLayoutAlignmentLeft:
         {
-            boundingRect.origin=CGPointMake(0, self.appendHeight);
+            tmpLabelFrame.origin=CGPointMake(0, self.appendHeight);
             break;
         }
         case JXVerticalLayoutAlignmentCenter:
         {
-            boundingRect.origin=CGPointMake((size.width-boundingRect.size.width)/2, self.appendHeight);
+            tmpLabelFrame.origin=CGPointMake((size.width-boundingSize.width)/2, self.appendHeight);
             break;
         }
         case JXVerticalLayoutAlignmentRight:
         {
-            boundingRect.origin=CGPointMake(size.width-boundingRect.size.width, self.appendHeight);
+            tmpLabelFrame.origin=CGPointMake(size.width-boundingSize.width, self.appendHeight);
             break;
         }
     }
-    label.frame=boundingRect;
-    frame.size=CGSizeMake(size.width, size.height+boundingRect.size.height);
+    label.frame=tmpLabelFrame;
+    frame.size=CGSizeMake(size.width, size.height+boundingSize.height);
     self.view.frame=frame;
     [self.view addSubview:label];
 }
@@ -112,6 +112,17 @@
     self.view.frame=frame;
     self.appendHeight=frame.size.height;
     [self.view addSubview:blank];
+}
+
+@end
+
+@implementation JXVerticalLayout(Measurement)
+
++(CGSize)boundingSizeForText:(NSString *)text font:(UIFont *)font widthLimit:(CGFloat)widthLimit
+{
+    NSDictionary* attributes=@{NSFontAttributeName:font};
+    CGRect boundingRect=[text boundingRectWithSize:CGSizeMake(widthLimit, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil];
+    return boundingRect.size;
 }
 
 @end
