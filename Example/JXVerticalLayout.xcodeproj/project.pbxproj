@@ -22,6 +22,11 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		7F3C0C4D814B9EE0AFBB9190 /* Pods_JXVerticalLayout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F6BD2AC1083B76A2DACD71 /* Pods_JXVerticalLayout_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		A98B05011A54FB1E00796832 /* JXVerticalLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A98B04F41A54FB1E00796832 /* JXVerticalLayout.m */; };
+		A98B05021A54FB1E00796832 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A98B04F71A54FB1E00796832 /* Info.plist */; };
+		A98B05031A54FB1E00796832 /* JXVerticalLayout.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A98B04F91A54FB1E00796832 /* JXVerticalLayout.xcconfig */; };
+		A98B05041A54FB1E00796832 /* JXVerticalLayout-Private.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A98B04FA1A54FB1E00796832 /* JXVerticalLayout-Private.xcconfig */; };
+		A98B05051A54FB1E00796832 /* JXVerticalLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A98B04FB1A54FB1E00796832 /* JXVerticalLayout-dummy.m */; };
 		DB14E8DCCF010B3959375B78 /* Pods_JXVerticalLayout_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5AA379E22913DA41BBD3D6 /* Pods_JXVerticalLayout_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -60,6 +65,15 @@
 		85E19E9BD243F027E2BDD542 /* Pods-JXVerticalLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXVerticalLayout_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JXVerticalLayout_Tests/Pods-JXVerticalLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A3BF599ECF97519FBD187D65 /* Pods-JXVerticalLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXVerticalLayout_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JXVerticalLayout_Example/Pods-JXVerticalLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A98B04F31A54FB1E00796832 /* JXVerticalLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXVerticalLayout.h; sourceTree = "<group>"; };
+		A98B04F41A54FB1E00796832 /* JXVerticalLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXVerticalLayout.m; sourceTree = "<group>"; };
+		A98B04F71A54FB1E00796832 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A98B04F81A54FB1E00796832 /* JXVerticalLayout.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = JXVerticalLayout.modulemap; sourceTree = "<group>"; };
+		A98B04F91A54FB1E00796832 /* JXVerticalLayout.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = JXVerticalLayout.xcconfig; sourceTree = "<group>"; };
+		A98B04FA1A54FB1E00796832 /* JXVerticalLayout-Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "JXVerticalLayout-Private.xcconfig"; sourceTree = "<group>"; };
+		A98B04FB1A54FB1E00796832 /* JXVerticalLayout-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JXVerticalLayout-dummy.m"; sourceTree = "<group>"; };
+		A98B04FC1A54FB1E00796832 /* JXVerticalLayout-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JXVerticalLayout-prefix.pch"; sourceTree = "<group>"; };
+		A98B04FD1A54FB1E00796832 /* JXVerticalLayout-umbrella.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JXVerticalLayout-umbrella.h"; sourceTree = "<group>"; };
 		ADCAB8D01B170E7891577F4F /* Pods-JXVerticalLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JXVerticalLayout_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JXVerticalLayout_Tests/Pods-JXVerticalLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BFD165049C1AEE5A9E1A4B32 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E4278183D4F90C02ADFFC2BD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -107,6 +121,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				A98B05001A54FB1E00796832 /* Development Pods */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for JXVerticalLayout */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -193,6 +208,57 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		A98B04F51A54FB1E00796832 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A98B04F31A54FB1E00796832 /* JXVerticalLayout.h */,
+				A98B04F41A54FB1E00796832 /* JXVerticalLayout.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A98B04F61A54FB1E00796832 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A98B04F51A54FB1E00796832 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		A98B04FE1A54FB1E00796832 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A98B04F71A54FB1E00796832 /* Info.plist */,
+				A98B04F81A54FB1E00796832 /* JXVerticalLayout.modulemap */,
+				A98B04F91A54FB1E00796832 /* JXVerticalLayout.xcconfig */,
+				A98B04FA1A54FB1E00796832 /* JXVerticalLayout-Private.xcconfig */,
+				A98B04FB1A54FB1E00796832 /* JXVerticalLayout-dummy.m */,
+				A98B04FC1A54FB1E00796832 /* JXVerticalLayout-prefix.pch */,
+				A98B04FD1A54FB1E00796832 /* JXVerticalLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JXVerticalLayout";
+			sourceTree = "<group>";
+		};
+		A98B04FF1A54FB1E00796832 /* JXVerticalLayout */ = {
+			isa = PBXGroup;
+			children = (
+				A98B04F61A54FB1E00796832 /* Pod */,
+				A98B04FE1A54FB1E00796832 /* Support Files */,
+			);
+			name = JXVerticalLayout;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A98B05001A54FB1E00796832 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A98B04FF1A54FB1E00796832 /* JXVerticalLayout */,
+			);
+			name = "Development Pods";
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,6 +342,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A98B05041A54FB1E00796832 /* JXVerticalLayout-Private.xcconfig in Resources */,
+				A98B05031A54FB1E00796832 /* JXVerticalLayout.xcconfig in Resources */,
+				A98B05021A54FB1E00796832 /* Info.plist in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -393,6 +462,8 @@
 				6003F59E195388D20070C39A /* JXAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* JXViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				A98B05051A54FB1E00796832 /* JXVerticalLayout-dummy.m in Sources */,
+				A98B05011A54FB1E00796832 /* JXVerticalLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
