@@ -1,0 +1,6 @@
+framework module Pods_JXVerticalLayout_Example {
+  umbrella header "Pods-JXVerticalLayout_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

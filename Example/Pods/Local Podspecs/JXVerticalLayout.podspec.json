@@ -1,0 +1,25 @@
+{
+  "name": "JXVerticalLayout",
+  "version": "0.1.0",
+  "summary": "A short description of JXVerticalLayout.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/JXVerticalLayout",
+  "license": "MIT",
+  "authors": {
+    "luqyluqe": "luqy.luqe@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/JXVerticalLayout.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "JXVerticalLayout": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

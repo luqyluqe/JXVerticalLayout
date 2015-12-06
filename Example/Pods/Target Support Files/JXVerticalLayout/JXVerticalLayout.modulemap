@@ -1,0 +1,6 @@
+framework module JXVerticalLayout {
+  umbrella header "JXVerticalLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}
